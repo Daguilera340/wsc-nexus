@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+}
+
+.login-pane__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-pane{
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
