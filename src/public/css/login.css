@@ -15,3 +15,28 @@ body{
     border: 1px solid #ddd;
     border-radius: 15px;
 }
+
+.wrapper{
+    padding: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.image-centered{
+    display: flex;
+    justify-content: center;
+}
+
+.image-centered .me{
+    width: 150px;
+}
+
+.cat{
+    width: 150px;
+}
