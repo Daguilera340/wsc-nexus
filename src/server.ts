@@ -9,7 +9,7 @@ import * as passportConfig from "./config/passport";
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useUnifiedTopology', true);
-mongoose.connect('mongodb://localhost/node-ts', (err) => {
+mongoose.connect('mongodb+srv://nexus:Abc123%28%29@cluster0-hwdax.mongodb.net/node-ts?retryWrites=true&w=majority', (err) => {
     if(err){
         console.log(err.message);
         return;
@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost/node-ts', (err) => {
 });
 
 const app: express.Application = express();
-const port: any = process.env.port || 5000;
+const port: any = process.env.PORT || 5000;
 
 
 app.set('view engine', 'hbs');
