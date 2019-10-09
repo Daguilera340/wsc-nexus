@@ -7,11 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
     "dev": "tsnd --watch --transpileOnly ./src/server.ts",
+    "build-scss": "node-sass src/scss/ -o src/public/css/ -x --output-style compressed",
+    "watch-scss": "node-sass -w src/scss/ -o src/public/css/ -x --output-style expanded",
     "copy-assets": "ts-node tools/copyAssets",
     "clean": "rimraf build/*",
     "build": "npm-run-all clean tsc copy-assets",
     "prod": "node .",
-    "heroku-postbuild" : "npm run build"
+    "heroku-postbuild": "npm run build"
   },
   "author": "",
   "license": "ISC",
