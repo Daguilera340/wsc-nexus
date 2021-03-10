@@ -10,11 +10,6 @@ router.get('/', (req, res, next) => {
         return;
     }
 
-    if(user.email === 'sara.gg'){
-        res.render('bday');
-        return;
-    }
-
    res.render('random');
 });
 
