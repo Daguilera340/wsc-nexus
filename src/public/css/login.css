@@ -1,0 +1,42 @@
+body{
+    height: 100vh;
+}
+
+.login-pane__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-pane{
+    width: 80%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.wrapper{
+    padding: 10px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.image-centered{
+    display: flex;
+    justify-content: center;
+}
+
+.image-centered .me{
+    width: 150px;
+}
+
+.cat{
+    width: 150px;
+}

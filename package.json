@@ -1,0 +1,50 @@
+{
+  "name": "ts-node",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "dev": "tsnd --watch --transpileOnly ./src/server.ts",
+    "build-scss": "node-sass src/scss/ -o src/public/css/ -x --output-style compressed",
+    "watch-scss": "node-sass -w src/scss/ -o src/public/css/ -x --output-style expanded",
+    "copy-assets": "ts-node tools/copyAssets",
+    "clean": "rimraf build/*",
+    "build": "npm-run-all clean tsc copy-assets",
+    "prod": "node .",
+    "heroku-postbuild": "npm run build"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express-session": "^1.15.14",
+    "@types/mongoose": "^5.5.19",
+    "@types/passport": "^1.0.1",
+    "bcryptjs": "^2.4.3",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "hbs": "^4.0.5",
+    "mongoose": "^5.7.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.1",
+    "@types/node": "^12.7.11",
+    "@types/passport-local": "^1.0.33",
+    "@types/shelljs": "^0.8.5",
+    "dart-sass": "^1.25.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
+    "shelljs": "^0.8.3",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "tslint": "^5.20.0",
+    "typescript": "^3.6.3"
+  },
+  "engines": {
+    "node": "10.13.0",
+    "npm": "6.4.1"
+  }
+}
